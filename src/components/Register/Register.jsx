@@ -23,7 +23,7 @@ function Register() {
 
     const regHandler = async (e) => {
         e.preventDefault();
-        const { data }  = await axios.post("http://127.0.0.1:3001/register", {formData})
+        const { data }  = await axios.post("https://node-zaliczenie.vercel.app/register", {formData})
         setRegStatus(data)
     }
     return (

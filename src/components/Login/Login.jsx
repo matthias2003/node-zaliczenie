@@ -23,7 +23,7 @@ function Login() {
 
     const loginHandler = async (e) => {
         e.preventDefault();
-        const { data }   = await axios.post("http://127.0.0.1:3001/login", {formData})
+        const { data }   = await axios.post("https://node-zaliczenie.vercel.app/login", {formData})
         setLogErr(data.status)
         if (data.status) {
             navigate("/home")

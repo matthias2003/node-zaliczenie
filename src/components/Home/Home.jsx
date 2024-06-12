@@ -27,7 +27,7 @@ function Home() {
             user: localStorage.getItem('user')
         }
         try {
-            await axios.post("http://127.0.01:3001/post",{data})
+            await axios.post("https://node-zaliczenie.vercel.app/post",{data})
             await fetchData(); // <-- Dodano ponowne pobranie danych po wysłaniu posta
             titleRef.current.value = ''; // <-- Czyszczenie pola tytułu
             textRef.current.value = '';
@@ -37,8 +37,7 @@ function Home() {
     }
 
     const deletePost = async (title) => {
-        await axios.post("http://127.0.01:3001/delete",{title});
-        console.log("Tutaj")
+        await axios.post("https://node-zaliczenie.vercel.app/delete",{title});
         await fetchData();
     }
 
@@ -49,7 +48,7 @@ function Home() {
     }
 
     const fetchData = async () => {
-        const {data} = await axios.get("http://127.0.01:3001/");
+        const {data} = await axios.get("https://node-zaliczenie.vercel.app/");
         setData(data);
         console.log(data)
     }
