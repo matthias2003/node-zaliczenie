@@ -1,0 +1,11 @@
+.form-alert {
+    position: absolute !important;
+    left: 0;
+    bottom: 0;
+}
+
+.alert-reg{
+    text-align: center;
+    margin: 10px;
+    color: red;
+}

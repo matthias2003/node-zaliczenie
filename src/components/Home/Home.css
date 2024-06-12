@@ -1,0 +1,62 @@
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: #55AD9B;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+.main-blog {
+    margin-top: 70px;
+}
+
+.svg-wrap {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.svg-wrap > svg {
+    width: auto;
+    height: 30px;
+    padding-right: 30px;
+}
+
+
+.svg-wrap > svg:hover {
+    cursor: pointer;
+}
+
+.homepage-center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    flex-direction: column;
+}
+
+.homepage-center > p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.homepage-center > img {
+    width: 50%;
+}
+
+
+
+.posts-wrap {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.post-wrap {
+    width: 50%;
+    margin: 0 auto 50px;
+}
