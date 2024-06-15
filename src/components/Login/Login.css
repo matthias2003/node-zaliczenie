@@ -8,7 +8,10 @@ main {
 }
 
 .login-box {
-    width: 30%;
+    width: 40%;
+    padding: 100px;
+    background-color: #D0E7D2;
+    border-radius: 10px;
 }
 .login-box > .form {
     width: 100%;

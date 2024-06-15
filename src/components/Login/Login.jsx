@@ -12,7 +12,7 @@ function Login() {
         password: ""
     });
 
-    const [logErr, setLogErr] = useState(false);
+    const [logErr, setLogErr] = useState(true);
 
     const updateFormData = (event) => {
         const { name, value } = event.target;
